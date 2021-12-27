@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity2"
+    android:background="@drawable/back123"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     android:orientation="vertical">
+     <ImageView
+         android:id="@+id/imageView4"
+         android:layout_width="match_parent"
+         android:layout_height="130dp"
+         android:layout_marginStart="8dp"
+         android:layout_marginTop="16dp"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/back1" />
+
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="50dp"
+         android:fontFamily="@font/bangers"
+         android:gravity="center"
+         android:text="@string/my_restaurant_app"
+         android:textAlignment="center"
+         android:textColor="@color/colorWhite"
+         android:textSize="33sp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent">
+
+     </TextView>
+
+     <TextView
+         android:id="@+id/textView4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:fontFamily="casual"
+         android:gravity="center"
+         android:text="@string/hello_explore_your_dream_food"
+         android:textColor="@color/white"
+         android:textStyle="bold"
+         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/textView2"
+         app:layout_constraintVertical_bias="0.142" />
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recyclerView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+
+
+     <LinearLayout
+         android:layout_marginRight="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="50dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent">
+
+      <Button
+          android:id="@+id/login_btn"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+          android:layout_weight="1"
+          android:background="@drawable/btn_bg_design"
+          android:fontFamily="@font/bangers"
+          android:onClick="login"
+          android:text="@string/login"
+          android:textColor="@color/white"
+          android:textSize="19dp"
+          tools:ignore="ButtonStyle"
+          android:transitionName="transition_login"/>
+
+      <Button
+          android:id="@+id/register_btn"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_weight="1"
+          android:onClick="register"
+          android:background="@drawable/btn_bg_design"
+          android:fontFamily="@font/bangers"
+          android:text="@string/register"
+          android:textColor="@color/white"
+          android:textSize="19dp"
+          tools:ignore="TextContrastCheck"
+          android:transitionName="transition_register"/>
+
+     </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
